@@ -1,5 +1,5 @@
 {
-  "extends": ["@ijsto"],
+  "extends": ["@ijsto","eslint:recommended", "next"],
   "rules": {
     "prettier/prettier": "error",
     "react/no-unescaped-entities": "off",
