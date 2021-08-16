@@ -1,6 +1,6 @@
 {
   "extends": ["@ijsto"],
-  "prettier/prettier": [
+  "prettier": [
     "error",
     {
       "endOfLine": "auto"
