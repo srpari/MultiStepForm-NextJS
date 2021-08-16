@@ -1,0 +1,116 @@
+
+     
+  .signup-form {
+    min-width: 500px;
+    min-height: 600px;
+    position: relative;
+  }
+  
+  .animator {
+    position: absolute;
+  }
+  
+  .step-links {
+    margin-bottom: 40px;
+    position: relative;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 280px;
+  }
+  
+  .step-links:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    background: #b2dec2;
+    z-index: 1;
+    top: 43px;
+    /* left: -22%; */
+    width: 100%;
+  }
+  
+  .step-links a {
+    display: inline-block;
+    font-size: 26px;
+    padding: 0px 40px;
+    /* margin-right: 10px; */
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    color: #2e141f;
+  }
+  
+  .step-links a.disabled {
+    pointer-events: none;
+  }
+  
+  .step-links a:hover {
+    color: #4d9869;
+  }
+  
+  .step-links a.active {
+    color: #215735;
+  }
+  
+  input[type='submit'] {
+    margin-left: 75%;
+    width: 25%;
+    margin-bottom: 0;
+    padding: 12px;
+    background: #d68865;
+    font-size: 16px;
+    color: #f9f6f4;
+    cursor: pointer;
+  }
+  
+  input[type='submit']:focus {
+    background: #eda27f;
+  }
+  input[type='submit']:hover {
+    background: #eda27f;
+  } 
+
+  
+input[type="checkbox"] {
+    position: relative;
+    cursor: pointer;
+    margin-right: 40px;
+    align-items: right;
+    background-color: #000;
+  }
+  input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    bottom: -5px;
+    left: 0;
+    border: 2px solid #555555;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  
+  input[type="checkbox"]:checked:after {
+    content: "";
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0px 2px 1px 0px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 1px;
+    left: 7px;
+  }
+  label {
+    text-align: left;
+    margin: 3px 20px;
+  }
+
+  .checkbox-container {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+  }
+  
